@@ -1,19 +1,22 @@
 @import-normalize;
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
 body {
   display: flex;
   justify-content: center;
-  text-align: center;
+  height: 100vh;
   margin: 0;
   padding: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Ovo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   background-color: rgba(205, 213, 248, 0.336);
   background-image: url('./images/maxresdefault.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
