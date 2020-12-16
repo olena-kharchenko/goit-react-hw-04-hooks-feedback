@@ -1,0 +1,9 @@
+.statisticList {
+  list-style: none;
+  font-size: 18px;
+}
+
+.positiveFeedback {
+  font-weight: 700;
+  color: rgb(18, 16, 172);
+}
