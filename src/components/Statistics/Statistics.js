@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 
-function Statistics(props) {
-  const { good, neutral, bad, total, positivePercentage } = props;
+function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <ul className={s.statisticList}>
       <li>
@@ -27,7 +26,11 @@ function Statistics(props) {
 }
 
 Statistics.propTypes = {
-  props: PropTypes.objectOf(PropTypes.number).isRequired,
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
