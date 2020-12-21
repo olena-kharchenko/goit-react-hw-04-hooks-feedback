@@ -12,19 +12,20 @@
   margin: 10px;
   padding: 5px;
   border-radius: 3px;
-  border: 2px solid #000000;
+  border: 2px solid;
   font-family: inherit;
   font-size: 20px;
   color: #000000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.25s;
 }
 
-.button:hover {
-  transform: scale(0.95);
-  background-color: rgb(0, 47, 255);
-  border-color: rgb(18, 16, 172);
-  color: #ffffff;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+.button:hover,
+.button:focus {
+  border-color: #3a098a;
+  background-color: #6608fd;
+  color: #fff;
+  box-shadow: 0 0.5em 0.5em -0.4em #6608fd;
+  transform: translateY(-0.2em);
 }
